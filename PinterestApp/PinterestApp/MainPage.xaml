@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PinterestApp.MainPage"
+             BackgroundImageSource="https://st2.depositphotos.com/16122460/45325/i/450/depositphotos_453252914-stock-photo-mykolaiv-ukraine-august-2020-iphone.jpg"
+             >
+    
+    
+
+    <StackLayout>
+        <Frame BackgroundColor="DarkRed" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Pinterest mock App" HorizontalTextAlignment="Center" TextColor="WhiteSmoke" FontSize="36"/>
+        </Frame>
+        <Image Source="https://www.pinclipart.com/picdir/big/104-1048870_a-link-to-pinterest-page-pinterest-grey-pinterest.png" />
+
+
+        <Button x:Name="pinterestButton" Text="Login "  TextColor="White"  BackgroundColor="DarkRed" Clicked="pinterestButton_Clicked"   WidthRequest="40"
+ HeightRequest="40"
+    CornerRadius="20"
+    BorderWidth="2"/>
+        <Button x:Name="pinterestButton2" Text="Signup "  TextColor="White"  BackgroundColor="DarkBlue" Clicked="pinterestButton_Clicked" WidthRequest="40" HeightRequest="40"
+    CornerRadius="20"
+    BorderWidth="2"/>
+
+
+    </StackLayout>
+
+</ContentPage>
