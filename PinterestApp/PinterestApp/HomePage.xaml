@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PinterestApp.HomePage"
+             BackgroundColor="Black"
+             NavigationPage.HasNavigationBar="False"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView >
+                <StackLayout >
+                    
+                    <Label Text="                 "/>
+                    <StackLayout Orientation="Horizontal" BackgroundColor="Black">
+                        <ImageButton x:Name="BackArrow" Clicked="BackArrow_Clicked"  BackgroundColor="Black"  Source="https://icon-library.com/images/white-back-icon/white-back-icon-24.jpg" HorizontalOptions="Start" WidthRequest="30" HeightRequest="10"/>
+                        <Label Text="                          All pins" TextColor="White" FontAttributes="Bold" FontSize="Medium"/>
+                        
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal"  >
+                        <Frame   Padding="0" Margin="2" BackgroundColor="#1f1f1f"  BorderColor="#1f1f1f" CornerRadius="15" HeightRequest="30">
+                            <SearchBar Placeholder="Search your pins" PlaceholderColor="DimGray" HorizontalOptions="Start" />
+                        </Frame>
+                        <Image Source="https://icon-library.com/images/white-hamburger-menu-icon/white-hamburger-menu-icon-24.jpg" WidthRequest="35"/>
+                        <Image Source="https://icon-library.com/images/plus-xxl_98328.png" WidthRequest="15"/>
+
+                    </StackLayout>
+                    <StackLayout Padding="60" VerticalOptions="FillAndExpand">
+                        <Frame Padding="0" CornerRadius="20" IsClippedToBounds="True">
+                            <ImageButton Source="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2019/03/2.jpg"/>
+
+                        </Frame>
+                        <Label Text="These roses smell sweet" TextColor="White" HorizontalOptions="Center"/>
+                        <Frame Padding="0" CornerRadius="20">
+                            <ImageButton Source="https://www.teahub.io/photos/full/55-558274_aesthetic-photography-pinterest-background.jpg"/>
+                        </Frame>
+                        <Label Text="SunSet View ... :)" TextColor="White" HorizontalOptions="Center"/>
+                        <Frame Padding="0" CornerRadius="20">
+                            <ImageButton Source="https://www.teahub.io/photos/full/243-2435594_flowers-tumblr-and-aesthetic-image-aesthetic-pinterest-photography.jpg"/>
+                        </Frame>
+                        <Label Text="4 me?" TextColor="White" HorizontalOptions="Center"/>
+                        <Frame Padding="0" CornerRadius="20">
+                            <ImageButton Source="https://www.teahub.io/photos/full/322-3223341_flowers-aesthetic-pinterest-backgrounds.jpg"/>
+                        </Frame>
+                        <Label Text="" TextColor="White" HorizontalOptions="Center"/>
+                        <Frame Padding="0" CornerRadius="20" >
+                            <ImageButton Source="https://www.teahub.io/photos/full/274-2743679_photography-summer-aesthetic.jpg"/>
+                        </Frame>
+                        <Label Text="ooooooo nice" TextColor="White" HorizontalOptions="Center"/>
+                        <Frame Padding="0" CornerRadius="20" >
+                            <ImageButton Source="https://www.teahub.io/photos/full/246-2466758_photography-aesthetic-backgrounds.jpg" HorizontalOptions="FillAndExpand"/>
+                        </Frame>
+                        <Label Text="Shot by a famous photographer" TextColor="White" HorizontalOptions="Center"/>
+
+                    </StackLayout>
+
+
+
+                </StackLayout >
+
+            </ScrollView>
+            <StackLayout Padding="0" Spacing="40"  Orientation="Horizontal"  HorizontalOptions="Center" >
+                <ImageButton x:Name="HomeButton" Clicked="HomeButton_Clicked" Source="https://icon-library.com/images/home-page-icon/home-page-icon-22.jpg" BackgroundColor="Black" WidthRequest="50"/>
+                <ImageButton Source="https://icon-library.com/images/search-icon-images/search-icon-images-16.jpg" BackgroundColor="Black" WidthRequest="20"/>
+                <ImageButton Source="https://icon-library.com/images/message-icon/message-icon-18.jpg" BackgroundColor="Black" WidthRequest="25"/>
+                <ImageButton Source="https://icon-library.com/images/profile-icon-png/profile-icon-png-5.jpg" BackgroundColor="Black" WidthRequest="27"/>
+            </StackLayout>
+        </StackLayout>
+
+
+    </ContentPage.Content>
+
+
+
+</ContentPage>
