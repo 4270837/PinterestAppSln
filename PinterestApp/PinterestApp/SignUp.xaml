@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PinterestApp.SignUp"
+             BackgroundImageSource=" "
+             BackgroundColor="Black"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout >
+            <StackLayout Orientation="Horizontal" BackgroundColor="Black">
+                <ImageButton x:Name="BackArrow" Clicked="BackArrow_Clicked"  BackgroundColor="Black"  Source="https://icon-library.com/images/white-back-icon/white-back-icon-24.jpg" HorizontalOptions="Start" WidthRequest="30" HeightRequest="10"/>
+                <Label Text="                          " TextColor="White" FontAttributes="Bold" FontSize="Medium"/>
+
+            </StackLayout>
+            <Image Source="https://pics.freeicons.io/uploads/icons/png/222441461555589665-512.png"/>
+            <Label Text="Enter Name:" FontSize="Body" TextTransform="Uppercase" FontAttributes="Bold" TextColor="IndianRed" />
+            <Entry x:Name="name" BackgroundColor="Gray" />
+            <Label Text="Enter Surname:" FontSize="Body" TextTransform="Uppercase" FontAttributes="Bold" TextColor="IndianRed" />
+            <Entry x:Name="surname" BackgroundColor="Gray"  />
+            <Label Text="Enter Email Address:" FontSize="Body" TextTransform="Uppercase" FontAttributes="Bold" TextColor="IndianRed"/>
+            <Entry x:Name="email" BackgroundColor="Gray" />
+
+            <Label Text="Enter Password" FontSize="Body" TextTransform="Uppercase" FontAttributes="Bold" TextColor="IndianRed"/>
+            <Entry IsPassword="True" BackgroundColor="Gray" />
+
+            <Label Text="Re-enter Password" FontSize="Body" TextTransform="Uppercase" FontAttributes="Bold" TextColor="IndianRed"/>
+            <Entry IsPassword="True" BackgroundColor="Gray" />
+            <Button Text="Create Account" x:Name="Signup" Clicked="Signup_Clicked" CornerRadius="20" BackgroundColor="IndianRed" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
